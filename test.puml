@@ -1,0 +1,22 @@
+@startuml
+entity BranchOffice {
+
+}
+entity BranchShop {
+
+}
+entity POfBranchOffice {
+
+}
+entity Product {
+
+}
+entity PCategory {
+
+}
+BranchShop }|..|| BranchOffice
+POfBranchOffice}|..|| BranchShop
+Product }|..||PCategory
+POfBranchOffice }|..|| Product
+
+@enduml
